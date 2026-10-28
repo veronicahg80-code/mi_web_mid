@@ -1,0 +1,6 @@
+{
+  "name": "Método MID - Máquina de Imprimir Dinero",
+  "description": "Plataforma oficial del curso online Método MID: domina productos digitales, publicidad en redes, creación de contenido y embudos de ventas por Hotmart.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
