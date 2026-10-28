@@ -1,6 +1,6 @@
 import React from 'react';
-import { BONUSES } from '../data/courseData';
-import { Bot, Zap, CheckCircle2, Gift, Maximize2 } from 'lucide-react';
+import { BONUSES, COURSE_CONFIG } from '../data/courseData';
+import { Bot, Zap, CheckCircle2, Gift, Maximize2, ArrowRight } from 'lucide-react';
 
 interface BonusesSectionProps {
   onOpenPosterModal: (imgSrc: string, title: string) => void;
@@ -102,8 +102,8 @@ export const BonusesSection: React.FC<BonusesSectionProps> = ({ onOpenPosterModa
           })}
         </div>
 
-        {/* Bonus Value Banner */}
-        <div className="mt-12 p-6 rounded-2xl bg-[#161410] border border-[#3C3526] text-center max-w-3xl mx-auto">
+        {/* Bonus Value Banner with Direct Checkout CTA */}
+        <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-[#161410] border border-[#3C3526] text-center max-w-3xl mx-auto space-y-4">
           <p className="text-sm sm:text-base text-[#D4AF63] font-medium">
             Valor total de los bonos por separado: <strong className="text-white">$164 USD</strong>.
             <br />
@@ -111,6 +111,17 @@ export const BonusesSection: React.FC<BonusesSectionProps> = ({ onOpenPosterModa
               Hoy incluidos gratis dentro de la matrícula única de <strong>$27 USD</strong> del Método MID.
             </span>
           </p>
+          <div className="pt-1">
+            <a
+              href={COURSE_CONFIG.checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-bold bg-[#D4AF63] text-[#14110B] hover:bg-[#E8CD91] transition-colors shadow-md"
+            >
+              <span>Acceder al Curso con los 2 Bonos Incluidos</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
       </div>

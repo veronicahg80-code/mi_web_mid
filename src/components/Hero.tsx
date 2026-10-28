@@ -45,7 +45,9 @@ export const Hero: React.FC<HeroProps> = ({ onWatchVideo }) => {
             {/* Action Group */}
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <a
-                href="#oferta"
+                href={COURSE_CONFIG.checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base font-bold bg-[#D4AF63] text-[#14110B] hover:bg-[#E8CD91] transition-all transform hover:-translate-y-0.5 active:translate-y-0 shadow-lg shadow-[#D4AF63]/15 text-center"
               >
                 <span>Comenzar Ahora por $27 USD</span>

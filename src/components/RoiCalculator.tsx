@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Calculator, ArrowRight, TrendingUp, Sparkles } from 'lucide-react';
+import { COURSE_CONFIG } from '../data/courseData';
 
 export const RoiCalculator: React.FC = () => {
   const [productPrice, setProductPrice] = useState<number>(27);
@@ -128,7 +129,9 @@ export const RoiCalculator: React.FC = () => {
               </div>
 
               <a
-                href="#oferta"
+                href={COURSE_CONFIG.checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold bg-[#D4AF63] text-[#14110B] hover:bg-[#E8CD91] transition-colors"
               >
                 <span>Aprender el Método por $27 USD</span>

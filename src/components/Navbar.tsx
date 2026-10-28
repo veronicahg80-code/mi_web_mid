@@ -69,7 +69,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsult }) => {
               ¿Tienes dudas?
             </button>
             <a
-              href="#oferta"
+              href={COURSE_CONFIG.checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold bg-[#D4AF63] text-[#14110B] hover:bg-[#E8CD91] transition-all transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm whitespace-nowrap"
             >
               <span>Acceder por $27 USD</span>
@@ -80,7 +82,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsult }) => {
           {/* Mobile menu button */}
           <div className="flex sm:hidden items-center gap-2">
             <a
-              href="#oferta"
+              href={COURSE_CONFIG.checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-3.5 py-1.5 rounded-md text-xs font-bold bg-[#D4AF63] text-[#14110B]"
             >
               $27 USD
@@ -152,7 +156,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsult }) => {
           </a>
           <div className="pt-3 border-t border-[#24221E] flex flex-col gap-2">
             <a
-              href="#oferta"
+              href={COURSE_CONFIG.checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center py-3 rounded-lg text-sm font-bold bg-[#D4AF63] text-[#14110B] hover:bg-[#E8CD91]"
             >

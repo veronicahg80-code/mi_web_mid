@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MODULES } from '../data/courseData';
+import { MODULES, COURSE_CONFIG } from '../data/courseData';
 import { 
   Compass, 
   Brain, 
@@ -188,7 +188,9 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({ onOpenPo
                 Incluido dentro de tu inscripción única de $27 USD
               </span>
               <a
-                href="#oferta"
+                href={COURSE_CONFIG.checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-xs font-bold text-[#14110B] bg-[#D4AF63] hover:bg-[#E8CD91] px-4 py-2 rounded-lg transition-colors"
               >
                 Inscribirme Ahora
@@ -261,7 +263,9 @@ export const CurriculumExplorer: React.FC<CurriculumExplorerProps> = ({ onOpenPo
         {/* Bottom CTA for Curriculum */}
         <div className="mt-16 text-center">
           <a
-            href="#oferta"
+            href={COURSE_CONFIG.checkoutUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base font-bold bg-[#D4AF63] text-[#14110B] hover:bg-[#E8CD91] transition-all shadow-lg shadow-[#D4AF63]/15"
           >
             <span>Quiero acceso inmediato a los 8 módulos</span>

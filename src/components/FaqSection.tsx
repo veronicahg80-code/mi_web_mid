@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FAQS } from '../data/courseData';
+import { FAQS, COURSE_CONFIG } from '../data/courseData';
 import { ChevronDown, Search, HelpCircle } from 'lucide-react';
 
 export const FaqSection: React.FC = () => {
@@ -124,7 +124,9 @@ export const FaqSection: React.FC = () => {
             <p className="text-xs text-[#A8A49A]">Nuestro equipo de soporte te asiste con cualquier consulta antes de comprar.</p>
           </div>
           <a
-            href="#oferta"
+            href={COURSE_CONFIG.checkoutUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-xs font-bold text-[#14110B] bg-[#D4AF63] hover:bg-[#E8CD91] px-4 py-2.5 rounded-lg whitespace-nowrap transition-colors"
           >
             Inscribirme por $27 USD

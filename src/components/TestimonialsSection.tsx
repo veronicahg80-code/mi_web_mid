@@ -11,6 +11,7 @@ import {
   Sparkles,
   ArrowRight
 } from 'lucide-react';
+import { COURSE_CONFIG } from '../data/courseData';
 
 export interface Testimonial {
   id: string;
@@ -334,7 +335,9 @@ export const TestimonialsSection: React.FC = () => {
           </p>
           <div className="pt-2">
             <a
-              href="#oferta"
+              href={COURSE_CONFIG.checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-bold bg-[#D4AF63] text-[#14110B] hover:bg-[#E8CD91] transition-colors"
             >
               <span>Quiero comenzar hoy con Método MID</span>
