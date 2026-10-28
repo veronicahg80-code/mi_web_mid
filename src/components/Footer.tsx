@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Copyright & Contact */}
         <div className="pt-6 border-t border-[#18171C] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#696660]">
           <p>
-            © {new Date().getFullYear()} Método MID. Todos los derechos reservados.
+            © 2026
           </p>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">
